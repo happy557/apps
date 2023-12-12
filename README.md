@@ -28,16 +28,7 @@
             margin-bottom: 8px;
         }
 
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        select {
+        input, select {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
@@ -60,25 +51,25 @@
 
 <form>
     <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" placeholder="Enter your first name" required>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" class="form-input" required>
 
     <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" placeholder="Enter your last name" required>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" class="form-input" required>
 
     <label for="age">Age:</label>
-    <input type="number" id="age" placeholder="Enter your age" required>
+    <input type="number" id="age" name="age" placeholder="Enter your age" class="form-input" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email" required>
+    <input type="email" id="email" name="email" placeholder="Enter your email" class="form-input" required>
 
     <label for="username">Username:</label>
-    <input type="text" id="username" placeholder="Choose a username" required>
+    <input type="text" id="username" name="username" placeholder="Choose a username" class="form-input" required>
 
     <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" required>
+    <input type="date" id="dob" name="dob" class="form-input" required>
 
     <label for="studentClass">Class:</label>
-    <select id="studentClass" required>
+    <select id="studentClass" name="studentClass" class="form-input" required>
         <option value="" disabled selected>Select your class</option>
         <option value="class1">Class 1</option>
         <option value="class2">Class 2</option>
@@ -86,7 +77,7 @@
     </select>
 
     <label for="gender">Gender:</label>
-    <select id="gender" required>
+    <select id="gender" name="gender" class="form-input" required>
         <option value="" disabled selected>Select your gender</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
@@ -98,4 +89,3 @@
 
 </body>
 </html>
-# apps
